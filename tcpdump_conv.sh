@@ -1,5 +1,5 @@
 #!/bin/bash
-tcpdump -i eth0 -ddd $3 > num.txt
+tcpdump -ddd $3 > num.txt
 lines=`cat num.txt | wc -l`
 tail -n "$((lines-7))" num.txt > num2.txt
 lines=`cat num2.txt | wc -l`
