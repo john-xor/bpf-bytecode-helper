@@ -2,7 +2,7 @@
 converts tcpdump's output of -ddd to a bytecode iptables can understand and act on
 
 usage
-./tcpdump_conv.sh "iptables chain" "<transport protocol>" "bpf filter here"
+./tcpdump_conv.sh "iptables chain" "transport protocol" "bpf filter here"
   
  example for a window size of 29200
  ./tcpdump_conv.sh "INPUT" "tcp" "tcp[14:2]=29200"
